@@ -1,8 +1,8 @@
 # This lists ec2 instances
 import boto3
 
-AWS_ACCESS_KEY_ID = "AKIAIO4H7NVHGJ7NPC6Q"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = "AKIAIO4H7NVHGJ7NPC6Q" # key has been deleted
+AWS_SECRET_ACCESS_KEY = "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" # key has been deleted
 
 session = boto3.Session(
     aws_access_key_id=AWS_ACCESS_KEY_ID,
