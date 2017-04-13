@@ -1,1 +1,1 @@
-# boto3
+This is just some junk that is piling up while I learn Python, Boto3 and AWS.
