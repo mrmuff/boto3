@@ -1,7 +1,8 @@
+# This lists ec2 instances
 import boto3
 
-AWS_ACCESS_KEY_ID = "YOUR_ID"
-AWS_SECRET_ACCESS_KEY = "YOUR_SECRET"
+AWS_ACCESS_KEY_ID = "AKIAIO4H7NVHGJ7NPC6Q"
+AWS_SECRET_ACCESS_KEY = "QYYSVWzTX0IiV4H0iQ6fbdvfTixoRBAu2eLmmVH3"
 
 session = boto3.Session(
     aws_access_key_id=AWS_ACCESS_KEY_ID,
@@ -10,7 +11,6 @@ session = boto3.Session(
 
 ec2 = session.resource('ec2', region_name='us-west-2')
 
-instances = ec2.instances.filter(
-    Filters=[{'Name': 'instance-state-name', 'Values': ['running']}])
+instances = ec2.instances.filter()
 for instance in instances:
-    print(instance.id, instance.instance_type, instance.key_name, instance.private_ip_address, instance.public_dns_name ,instance.tags[0].get("Value"))
+    print(instance.id)
